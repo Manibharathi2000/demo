@@ -1,0 +1,212 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #181c21;
+
+}
+
+.search-input {
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    height: 40px;
+}
+
+.search-input::placeholder {
+    color: #aaa;
+    /* Placeholder color */
+}
+
+
+.card img {
+    width: 200px;
+    height: 230px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.card-title:hover {
+    color: #3498db;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.card-text {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .card img {
+        height: 150px;
+    }
+}
+
+
+.loader_modal .modal-content {
+    border: none !important;
+    background-color: transparent !important;
+    align-items: center;
+}
+
+.viewProductContainer {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.viewproductCls img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 400px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.color-selector {
+    display: flex;
+    align-items: center;
+}
+
+.color-box {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+}
+
+.quantity-selector {
+    width: 150px;
+}
+
+.quantity-input {
+    width: 60px;
+}
+
+.button-group button {
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+    .product-details {
+        text-align: center;
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-price {
+        text-align: center;
+    }
+}
+.card-img-top {
+    padding: 30px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+.search-container {
+    position: relative;
+    display: inline-block; /* Makes the container fit the input width */
+}
+.search-input {
+    padding-right: 10px; /* Optional: Add some padding to the right */
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px; 
+    top: 55%;
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    pointer-events: none; /* Prevent clicks on the icon */
+    color: gray; /* Change the icon color as needed */
+}
+
+.searchdropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;  /* Adjust the gap between items */
+    margin-top: 20px; /* Margin at the top */
+}
+.card {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box-shadow */
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) -(var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+    box-shadow: var(--bs-card-box-shadow); /* Applied box-shadow */
+}
+
+@media (max-width: 800px) {
+    .header-container {
+        flex-direction: column; /* Change to column layout */
+        align-items: center; /* Center items in column layout */
+        gap: 10px; /* Optional: Adjust the gap for smaller screens */
+        padding: 10px;
+    }
+}
