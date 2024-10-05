@@ -3,6 +3,7 @@ import SearchBar from "./SearchBar";
 import { useAppContext } from "./AppProvider";
 import { useNavigate } from "react-router-dom";
 
+
 const Product = () => {
     const { GetApi } = useAppContext();
     const [products, setProducts] = useState([]);
@@ -66,7 +67,6 @@ const Product = () => {
 
         setFilteredProducts(filtered);
     };
-    
     const handleProductClick = (id) => {
         navigate(`/ViewProduct`, { state: { productId: id } });
         console.log("Product ID:", id); 
@@ -74,6 +74,36 @@ const Product = () => {
 
     return (
         <div>
+                 {/* <div className="App">
+                 <div className="marquee-container">
+  <div className="marquee-content">
+    <h1 className="moving-heading" style={{marginLeft:"15px"}}>Diwali Sale is live !!!</h1>
+    <h1 className="moving-heading" style={{marginLeft:"15px"}}>Diwali Sale is live !!!</h1>
+    <h1 className="moving-heading" style={{marginLeft:"15px"}}>Diwali Sale is live !!!</h1>
+    <h1 className="moving-heading" style={{marginLeft:"15px"}}>Diwali Sale is live !!!</h1>
+    <h1 className="moving-heading" style={{marginLeft:"15px"}}>Diwali Sale is live !!!</h1>
+  </div>
+  
+</div>
+
+    </div> */}
+   <marquee 
+  className="content"
+  direction="left"
+  style={{ width: "100%", padding: "0 20px" }} // Adds left and right padding
+  scrollAmount={10}
+
+>
+  <span
+    className="header-promotion marquee-span"
+    style={{ display: "inline-block" }}
+  >
+      💥 DIWALI SALE is Live !!! 💥
+  </span>
+</marquee>
+
+
+
             <SearchBar
                 onSearchChange={setSearchTerm}
                 onFilterChange={setSelectedFilter}
